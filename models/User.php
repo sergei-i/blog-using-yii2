@@ -110,4 +110,9 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return password_verify($password, $this->password);
     }
+
+    public function getImage()
+    {
+        return ($this->photo);
+    }
 }
